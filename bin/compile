@@ -11,10 +11,13 @@ FIXED_HOME=/app
 
 mkdir -p $CACHE_DIR
 
-if [ ! -e $CACHE_DIR/ghc ]; then
+if [ ! -e $CACHE_DIR/ghc ];
+then
   GHC_URL="http://informatik.uni-kiel.de/~sad/ghc.tar.gz"
   echo "-----> Downloading GHC"
   curl -# --max-time 120 -L "$GHC_URL" | tar xz -C $CACHE_DIR
+else
+  $CACHE_DIR/ghc --version
 fi
 
 # Restore GHC registry if available

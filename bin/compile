@@ -21,6 +21,7 @@ else
   $CACHE_DIR/ghc/bin/ghc --version
   echo $CACHE_DIR/ghc/bin/ghc
   /app/ghc/bin/ghc --version
+  echo $FIXED_HOME
 fi
 
 # Restore GHC registry if available

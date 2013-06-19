@@ -20,7 +20,6 @@ else
   ls -la $CACHE_DIR/ghc
   $CACHE_DIR/ghc/bin/ghc --version
   echo $CACHE_DIR/ghc/bin/ghc
-  /app/ghc/bin/ghc --version
   echo $FIXED_HOME
 fi
 
@@ -32,6 +31,7 @@ fi
 
 # Fix directory
 mv $CACHE_DIR/ghc $FIXED_HOME
+/app/ghc/bin/ghc --version
 
 # Restore Cabal cache or download an empty environemt
 if [ -e $CACHE_DIR/cabal ]; then

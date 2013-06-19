@@ -31,7 +31,9 @@ fi
 
 # Fix directory
 mv $CACHE_DIR/ghc $FIXED_HOME
+echo hevonen
 /app/ghc/bin/ghc --version
+echo lapanen
 
 # Restore Cabal cache or download an empty environemt
 if [ -e $CACHE_DIR/cabal ]; then

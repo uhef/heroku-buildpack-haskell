@@ -17,7 +17,7 @@ then
   echo "-----> Downloading GHC"
   curl -# --max-time 120 -L "$GHC_URL" | tar xz -C $CACHE_DIR
 else
-  $CACHE_DIR/ghc --version
+  ls -la $CACHE_DIR/ghc
 fi
 
 # Restore GHC registry if available

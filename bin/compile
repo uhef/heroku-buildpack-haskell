@@ -18,6 +18,7 @@ then
   curl -# --max-time 120 -L "$GHC_URL" | tar xz -C $CACHE_DIR
 else
   ls -la $CACHE_DIR/ghc
+  $CACHE_DIR/ghc/bin/ghc --version
 fi
 
 # Restore GHC registry if available

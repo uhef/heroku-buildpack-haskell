@@ -19,6 +19,7 @@ then
 else
   ls -la $CACHE_DIR/ghc
   $CACHE_DIR/ghc/bin/ghc --version
+  echo $CACHE_DIR/ghc/bin/ghc
 fi
 
 # Restore GHC registry if available

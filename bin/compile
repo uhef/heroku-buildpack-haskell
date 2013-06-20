@@ -30,7 +30,8 @@ if [ -e $CACHE_DIR/dotghc ]; then
 fi
 
 # Fix directory
-mv $CACHE_DIR/ghc $FIXED_HOME
+#mv $CACHE_DIR/ghc $FIXED_HOME
+cp -r $CACHE_DIR/ghc $FIXED_HOME
 echo hevonen
 /app/ghc/bin/ghc --version
 echo lapanen
